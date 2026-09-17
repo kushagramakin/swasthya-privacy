@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swasthya Health| Unified Health & Wellness</title>
-    <!-- Tailwind CSS for rapid styling -->
+    <title>Swasthya Health | Unified Health & Wellness</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Inter for a clean, modern SaaS look -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
@@ -14,8 +12,8 @@
                 extend: {
                     fontFamily: { sans: ['Inter', 'sans-serif'] },
                     colors: {
-                        primary: '#059669', // Emerald 600
-                        dark: '#0f172a', // Slate 900
+                        primary: '#059669', 
+                        dark: '#0f172a', 
                     }
                 }
             }
@@ -37,7 +35,6 @@
         <div class="text-2xl font-bold tracking-tight">Swasthya Health<span class="text-primary">.</span></div>
         <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-300">
             <a href="#features" class="hover:text-white transition">Features</a>
-            <!-- UPDATED: Points to your new privacy.html file instead of the footer -->
             <a href="privacy.html" class="hover:text-white transition">Privacy</a>
             <a href="mailto:kushagramakin@gmail.com" class="hover:text-white transition">Support</a>
         </div>
@@ -49,11 +46,11 @@
         <!-- Left Content -->
         <div class="flex-1 space-y-8 text-center md:text-left">
             <h1 class="text-5xl md:text-7xl font-bold leading-tight tracking-tight">
-                Your body's data, <br>
-                <span class="gradient-text">beautifully unified.</span>
+                Digitize your health, <br>
+                <span class="gradient-text">effortlessly.</span>
             </h1>
             <p class="text-lg md:text-xl text-gray-400 max-w-lg mx-auto md:mx-0 leading-relaxed">
-                Swasthya syncs seamlessly with Android Health Connect to bring your sleep, steps, and wellness metrics into one powerful dashboard.
+                Swasthya Health is your secure, all-in-one personal health logging dashboard. Eliminate manual data entry, digitize your medical history, and track your long-term health trajectory.
             </p>
             
             <!-- Download / QR Section -->
@@ -72,9 +69,8 @@
         <div class="flex-1 flex justify-center relative">
             <div class="absolute inset-0 bg-primary/20 blur-3xl rounded-full w-3/4 h-3/4 mx-auto top-1/2 -translate-y-1/2"></div>
             
-            <div class="relative w-72 h-[600px] bg-gray-800 rounded-[3rem] border-[8px] border-gray-900 shadow-2xl overflow-hidden z-10 flex items-center justify-center">
-                <!-- UPDATED: Added an actual image tag. Replace 'screenshot.png' with your real file name once uploaded to GitHub -->
-                <img src="screenshot.png" alt="Swasthya App Dashboard" class="w-full h-full object-cover">
+            <div class="relative z-10 rounded-[2.5rem] shadow-2xl overflow-hidden border-[6px] border-slate-800 max-w-[280px] w-full hover:scale-[1.02] transition-transform duration-500 bg-white">
+                <img src="screenshot.png" alt="Swasthya App Dashboard" class="w-full h-auto block">
             </div>
         </div>
     </section>
@@ -82,24 +78,30 @@
     <!-- Features Section -->
     <section id="features" class="bg-slate-900 border-y border-slate-800 py-24">
         <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-5xl mx-auto">
                 
                 <div class="space-y-4">
-                    <div class="w-12 h-12 bg-primary/20 text-primary rounded-xl flex items-center justify-center text-2xl">🌙</div>
-                    <h3 class="text-xl font-semibold">Sleep Analytics</h3>
-                    <p class="text-gray-400 leading-relaxed">Advanced tracking of your sleep cycles and resting phases pulled directly from your device's native health sensors.</p>
+                    <div class="w-12 h-12 bg-primary/20 text-primary rounded-xl flex items-center justify-center text-2xl">📄</div>
+                    <h3 class="text-xl font-semibold">Automated Report Parsing</h3>
+                    <p class="text-gray-400 leading-relaxed">Upload your PDF medical and lab reports directly. Swasthya instantly extracts key biomarkers like Hemoglobin, TSH, Fasting Glucose, BMI, and Total Cholesterol so you don't have to type them.</p>
                 </div>
 
                 <div class="space-y-4">
-                    <div class="w-12 h-12 bg-primary/20 text-primary rounded-xl flex items-center justify-center text-2xl">👟</div>
-                    <h3 class="text-xl font-semibold">Activity Sync</h3>
-                    <p class="text-gray-400 leading-relaxed">Zero manual entry. We read your steps and activity safely through Google Health Connect.</p>
+                    <div class="w-12 h-12 bg-primary/20 text-primary rounded-xl flex items-center justify-center text-2xl">📊</div>
+                    <h3 class="text-xl font-semibold">Dynamic Health Dashboard</h3>
+                    <p class="text-gray-400 leading-relaxed">Visualize your extracted vitals and track your overall health percentile against age-stratified standard clinical baselines in one simple interface.</p>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="w-12 h-12 bg-primary/20 text-primary rounded-xl flex items-center justify-center text-2xl">🔄</div>
+                    <h3 class="text-xl font-semibold">Seamless Syncing</h3>
+                    <p class="text-gray-400 leading-relaxed">Consolidate your health records, device vitals, and historic lab results in one highly accessible, secure location.</p>
                 </div>
 
                 <div class="space-y-4">
                     <div class="w-12 h-12 bg-primary/20 text-primary rounded-xl flex items-center justify-center text-2xl">🔒</div>
-                    <h3 class="text-xl font-semibold">Privacy First</h3>
-                    <p class="text-gray-400 leading-relaxed">Your health data never leaves your control. Securely authenticated via Firebase and strictly sandboxed.</p>
+                    <h3 class="text-xl font-semibold">Secure Identity & Storage</h3>
+                    <p class="text-gray-400 leading-relaxed">Powered by industry-standard authentication and encrypted cloud storage, your data remains strictly tied to your private profile and never leaves your control.</p>
                 </div>
 
             </div>
