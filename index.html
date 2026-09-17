@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swasthya | Unified Health & Wellness</title>
+    <!-- Tailwind CSS for rapid styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter for a clean, modern SaaS look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        primary: '#059669', // Emerald 600
+                        dark: '#0f172a', // Slate 900
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(90deg, #10b981, #059669);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-dark text-white selection:bg-primary selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="container mx-auto px-6 py-6 flex justify-between items-center">
+        <div class="text-2xl font-bold tracking-tight">Swasthya<span class="text-primary">.</span></div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-300">
+            <a href="#features" class="hover:text-white transition">Features</a>
+            <a href="#privacy" class="hover:text-white transition">Privacy</a>
+            <a href="mailto:kashishshubhamarora@gmail.com" class="hover:text-white transition">Support</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-6 py-16 md:py-32 flex flex-col-reverse md:flex-row items-center gap-12">
+        
+        <!-- Left Content -->
+        <div class="flex-1 space-y-8 text-center md:text-left">
+            <h1 class="text-5xl md:text-7xl font-bold leading-tight tracking-tight">
+                Your body's data, <br>
+                <span class="gradient-text">beautifully unified.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-400 max-w-lg mx-auto md:mx-0 leading-relaxed">
+                Swasthya syncs seamlessly with Android Health Connect to bring your sleep, steps, and wellness metrics into one powerful dashboard.
+            </p>
+            
+            <!-- Download / QR Section -->
+            <div class="flex flex-col sm:flex-row items-center gap-6 pt-4 justify-center md:justify-start">
+                <!-- QR Code Box -->
+                <div class="bg-white p-2 rounded-xl shadow-lg flex-shrink-0">
+                    <!-- REPLACE SRC WITH YOUR ACTUAL QR CODE IMAGE -->
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://play.google.com/store/apps/details?id=com.swasthindia.swasthyahealth" alt="Scan to Download" class="w-24 h-24 rounded-lg">
+                </div>
+                <div class="space-y-2 text-left">
+                    <p class="text-sm font-medium text-gray-300 uppercase tracking-wider">Scan to download</p>
+                    <p class="text-xs text-gray-500">Requires Android 9.0+</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Content (App Mockup) -->
+        <div class="flex-1 flex justify-center relative">
+            <!-- Decorative Background Glow -->
+            <div class="absolute inset-0 bg-primary/20 blur-3xl rounded-full w-3/4 h-3/4 mx-auto top-1/2 -translate-y-1/2"></div>
+            
+            <!-- Phone Mockup Container (Replace bg-gray-800 with actual app screenshot later) -->
+            <div class="relative w-72 h-[600px] bg-gray-800 rounded-[3rem] border-[8px] border-gray-900 shadow-2xl overflow-hidden z-10 flex items-center justify-center">
+                <span class="text-gray-500 text-sm font-medium px-6 text-center">App Screenshot<br>(Replace with your <img> tag)</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="bg-slate-900 border-y border-slate-800 py-24">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                
+                <!-- Feature 1 -->
+                <div class="space-y-4">
+                    <div class="w-12 h-12 bg-primary/20 text-primary rounded-xl flex items-center justify-center text-2xl">
+                        🌙
+                    </div>
+                    <h3 class="text-xl font-semibold">Sleep Analytics</h3>
+                    <p class="text-gray-400 leading-relaxed">Advanced tracking of your sleep cycles and resting phases pulled directly from your device's native health sensors.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="space-y-4">
+                    <div class="w-12 h-12 bg-primary/20 text-primary rounded-xl flex items-center justify-center text-2xl">
+                        👟
+                    </div>
+                    <h3 class="text-xl font-semibold">Activity Sync</h3>
+                    <p class="text-gray-400 leading-relaxed">Zero manual entry. We read your steps and activity safely through Google Health Connect.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="space-y-4">
+                    <div class="w-12 h-12 bg-primary/20 text-primary rounded-xl flex items-center justify-center text-2xl">
+                        🔒
+                    </div>
+                    <h3 class="text-xl font-semibold">Privacy First</h3>
+                    <p class="text-gray-400 leading-relaxed">Your health data never leaves your control. Securely authenticated via Firebase and strictly sandboxed.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Legal & Footer -->
+    <footer id="privacy" class="container mx-auto px-6 py-12 mt-12 border-t border-slate-800 text-sm text-gray-500">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+            <p>&copy; 2026 Swasthya Health. All rights reserved.</p>
+            
+            <div class="flex space-x-6">
+                <!-- Replace with links to separate privacy.html / terms.html pages if they get too long -->
+                <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition">Terms of Service</a>
+                <a href="mailto:kashishshubhamarora@gmail.com" class="hover:text-white transition">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
