@@ -56,12 +56,23 @@
             
             <!-- Download / QR Section -->
             <div class="flex flex-col sm:flex-row items-center gap-6 pt-4 justify-center md:justify-start">
-                <div class="bg-white p-2 rounded-xl shadow-lg flex-shrink-0">
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://play.google.com/store/apps/details?id=com.swasthindia.swasthyahealth" alt="Scan to Download" class="w-24 h-24 rounded-lg">
-                </div>
-                <div class="space-y-2 text-left">
-                    <p class="text-sm font-medium text-gray-300 uppercase tracking-wider">Scan to download</p>
-                    <p class="text-xs text-gray-500">Requires Android 9.0+</p>
+                <!-- Clickable Google Play Badge -->
+                <a href="https://play.google.com/store/apps/details?id=com.swasthindia.swasthyahealth" target="_blank" rel="noopener noreferrer" class="hover:scale-[1.02] transition-transform active:scale-95 shrink-0">
+                    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" class="h-16 w-auto">
+                </a>
+                
+                <!-- Hidden on very small screens, visible on larger ones -->
+                <div class="hidden sm:block h-12 w-px bg-slate-700/50"></div>
+
+                <!-- QR Code Block -->
+                <div class="flex items-center gap-4">
+                    <div class="bg-white p-1.5 rounded-xl shadow-lg flex-shrink-0">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://play.google.com/store/apps/details?id=com.swasthindia.swasthyahealth" alt="Scan to Download" class="w-14 h-14 rounded-md">
+                    </div>
+                    <div class="space-y-0.5 text-left">
+                        <p class="text-xs font-bold text-gray-300 uppercase tracking-widest">Or Scan QR</p>
+                        <p class="text-[10px] text-gray-500 font-medium">Android 9.0+</p>
+                    </div>
                 </div>
             </div>
         </div>
